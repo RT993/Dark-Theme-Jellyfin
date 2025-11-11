@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
     gap: 20px; /* Add spacing between items */
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Thumbnails of Movies/Shows */
@@ -39,7 +39,7 @@
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Next Up and Now Playing Rows */
+/* Next Up and Now Playing Rows 
 .next-up, .now-playing {
     margin-top: 30px;
 }
@@ -49,6 +49,7 @@
     font-size: 20px;
     margin-bottom: 10px;
 }
+*/
 
 /* Movie/Show Titles */
 .movie-item .title, .show-item .title {
@@ -88,55 +89,4 @@
 /* Make the main container more fluid */
 .main-container {
     padding: 20px;
-}
-/* === Netflix-Style Latest Movies Row === */
-.latestMoviesSection .itemsContainer {
-  display: flex !important;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-.latestMoviesSection .cardBox {
-  flex: 0 0 18%;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.latestMoviesSection .cardBox:hover {
-  transform: scale(1.1);
-  z-index: 5;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-}
-
-/* Poster image */
-.latestMoviesSection .cardImageContainer {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Movie title overlay */
-.latestMoviesSection .cardOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-  color: #fff;
-  padding: 1em;
-  font-size: 1em;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.latestMoviesSection .cardBox:hover .cardOverlay {
-  opacity: 1;
-}
-
-/* Hide unnecessary text for clean look */
-.latestMoviesSection .cardText-secondary {
-  display: none;
 }
